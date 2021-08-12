@@ -1,12 +1,18 @@
 @charset "utf-8";
 
 body, html {
-  height: 100%;
+	 min-width:1000px;  
+	min-height: 600px;
+   width: auto !important;  
+   width:1000px; 
+	height:100%;
   margin: auto;
 	
 }
 
-
+div#about{min-width:800px;}
+div#about > div{float:left; width:50%}
+div#about > div > div{padding:40px}
 
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 0.11; /* IE9 only */ } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; opacity: 0.11; /* IE9 only */ } to { opacity:1; } }
