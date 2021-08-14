@@ -72,6 +72,8 @@ a.norm {
 a.blackNorm {
 	text-decoration:none;
 	color:black;
+  font-size:1vw;
+  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
 }
 
 a.blackNorm:hover{
@@ -92,4 +94,28 @@ p {
 li {
 	font-size: 1.25rem;
 	padding-left:2.5%
+}
+
+/*For social media buttons*/
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
