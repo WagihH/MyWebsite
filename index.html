@@ -1,34 +1,62 @@
 <!doctype html>
 
 <html>
-<head>
-<link rel="stylesheet" href="mysite.css">
-<link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>index</title>
-</head>
-<body>
-<section id = "openingSection" style="background-image: url('images/background1.svg'); background-size:cover;background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:100%">
- 
-  <section id = "navBar" style="height:auto;background-color: white;">
-    <section style="padding-top:1%; float:left; padding-left:2%"> <img src="images/wagih_logo_black.png" alt="WHLogo" width="70" height="70" >
-    
-  </section>
-    <section style="padding-top:1%; padding-right:7%">
-      <p style="color:black; text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'"> <a class = "blackNorm" href="index.html"> Home </a>   &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; <a class = "blackNorm" href="resume.htm "> Resume </a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  <a class = "blackNorm" href="about.html"> About</a> </p>
-    </section>
-  </section>
+  <head>
+    <link rel="stylesheet" href="mysite.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+  </head>
+  <body>
 
-  <div class="fade-in one">
-    <p style="color:black;padding-top:200px;padding-left:50px;margin:auto; font-size:6vw; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height:1"> Wagih <br>
-      Henawi </p>
-  </div>
-  <div class="fade-in two">
-    <p style="color:black;padding-left:50px; margin:auto; font-size:2vw; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; text-overflow: ellipsis">Economics and Computer Science <br>
-      Major at Grinnell College </p>
-  </div>
-</section>
+    <section id = "openingSection" style="background-image: url('images/openingBackground.svg'); background-size:cover;background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:100%">
+ 
+      <header>
+        <div class="container">
+            <img src="images/signature.jpg" alt="signature" class="logo" style="height:100%; width:7%">
+            <nav>
+              <ul>
+                <li><a href="#"><b>Home</b></a></li>
+                <li><a href="resume.htm"><b>Resume</b></a></li>
+                <li><a href="#"><b>More</b></a></li>
+              </ul>
+            </nav>
+        </div>
+      </header>
+    
+
+      <div class="fade-in one" style="width:100%; height:90%">
+          <div style="padding-top:200px; position:relative">
+            <p style="padding-left:50px;margin:auto; font-size:6vw; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height:1"> Wagih <br>
+              Henawi 
+            </p>
+          </div>
+          <br>
+        <div class="fade-in two">
+          <p style="color:black;padding-left:50px; margin:auto; font-size:2vw; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; text-overflow: ellipsis">
+            <em> Economics and Computer Science <br> Major at Grinnell College </em>
+          </p>
+          <div style = "float:left;padding-left:50px; padding-top:20px;">
+            <a href="https://www.linkedin.com/in/wagih-henawi-28610217b/" style = "font-size:30px;" class="fa fa-linkedin"></a>
+          </div>
+                
+          <div class="popup" style="float:left" onclick="myFunction()"><strong>Contact Me</strong>
+            <span class="popuptext" id="myPopup"><a href = "mailto: waynehenawi@gmail.com">waynehenawi@gmail.com</a> <br> (917) 463-7466</span>
+          </div>
+
+          <script>
+          // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+              }
+          </script>
+
+        </div>
+      </div>
+    </section>
+
 
 <section id = "about" style="background-image: url('images/beigeBackground.svg'); background-size:cover;background-attachment: static;background-position: center center; background-repeat: no-repeat; height:125%; border:none"> 
 	
@@ -45,10 +73,7 @@
   
 	</section>
 
-<section id = "research" style="background-image: url('images/beigeBackground.svg'); background-size:cover; background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:150vw;"> 
-
-
-
+<section id = "research" style="background-image: url('images/beigeBackground.svg'); background-size:cover; background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:125vw;"> 
   
   <section style="height:20vw; background-image: url('images/research.svg'); background-size:cover; background-attachment:fixed; background-position: center center; background-repeat: no-repeat;"> </section>
  
@@ -63,10 +88,10 @@
   </div>
 
   <div style="width:60%; float:left">
-    <div style = "padding-right:20%; padding-top: 100px;">
+    <div style = "padding-right:30%; padding-top: 100px;">
       <div style= "text-align:left; ">
-        <p style="color:black;padding-left:30px; font-size:1.5vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
-          <strong style="font-size:2vw;">Statistics Researcher</strong> <br>
+        <p style="color:black;padding-left:30px; font-size:1.2vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
+          <strong style="font-size:1.75vw;">Statistics Researcher</strong> <br>
           <em>May - August 2021</em> 
           <br>
           <strong> Grinnell, IA </strong> 
@@ -87,17 +112,17 @@
   <section id="PCA">
 
     <div style="width:40%; float:left">
-      <div style = "padding-left:100px; padding-top:110px">
+      <div style = "padding-left:100px; padding-top:110px; padding-right:3vw">
         <div style= "text-align:right; ">
-          <img src="images/hockeyStickGraph.png" alt="hockeyStickGraph" style="border:#000 3px solid; position: static; width:100%; align-content: center; height:22vw">
+          <img src="images/hockeyStickGraph.png" alt="hockeyStickGraph" style="border:#000 3px solid; position: static; width:100%; align-content: center; height:20vw">
         </div>
         <div style = "padding-left:50px; padding-right:30px; padding-top:1vw">
           <div style="width:100%">
             <div style="width:15%; float:left;">
-              <img src = "images/awardBlue.png" alt="medal" style = "background-attachment: static; float:left; width:3vw; height:4vw"> 
+              <img src = "images/awardBlue.png" alt="medal" style = "padding-left:3.5vw; background-attachment: static; float:left; width:2.2vw; height:3vw"> 
             </div>
             <div style="width:85%; float: left; text-align: left; padding-top:0.5vw">
-              <strong style="font-size: 1.5vw;">USCLAP Honorable Mention</strong>
+              <strong style="font-size: 1vw; padding-left: 3vw;">USCLAP Honorable Mention</strong>
             </div>
           </div>
         </div>
@@ -105,10 +130,10 @@
     </div>
   
     <div style="width:60%; float:left">
-      <div style = "padding-right:20%; padding-top: 100px;">
+      <div style = "padding-right:30%; padding-top: 100px;">
         <div style= "text-align:left; ">
-          <p style="color:black;padding-left:30px; font-size:1.5vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
-            <strong style="font-size:2vw;">The Effects of Improper Standardization on Modeling Trends in Surface Temperature</strong>
+          <p style="color:black;padding-left:30px; font-size:1.2vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
+            <strong style="font-size:1.75vw;">The Effects of Improper Standardization on Modeling Trends in Surface Temperature</strong>
             <br>
             <br>
             The Mann, Bradley and Hughes’ (MBH, 1998) highly cited ‘hockey-stick shaped’ graph showed a drastic increase in surface temperatures post-industrial revolution.
@@ -128,179 +153,83 @@
       </div>
   
     </section>
-  <!--
-
-  <section id = "researchTitles" style = "width:100%;">
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top: 10px;">
-        <p style="text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'">
-          <strong style = "font-size: 1.5vw;">The Effects of Improper Standardization on Modeling Trends in Surface Temperature</strong> 
-        </p>
-      </div>
-    </section>
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top: 10px;">
-        <p style="text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'">
-          <strong style = "font-size: 1.5vw;">Comparing, Validating, and Optimizing Machine Learning Models</strong> 
-        </p>
-      </div>
-    </section>
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top: 10px;">
-        <p style="text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'">
-          <strong style = "font-size: 1.5vw;">Can Money buy Happiness? Studying Macroeconomic predictors of Self-Reported Happiness Per Country</strong> 
-        </p>
-      </div>
-    </section>
 
   </section>
-
-  <section id = "researchPictures" style = "width:100%; height:33%; float:left">
   
-    <section style = "width:33%; float:left;">
-      <div style = "padding-left:50px; padding-right:30px; padding-top: 10px; padding-bottom: 10px;">
-        <img src="images/hockeyStickGraph.png" alt="hockeyStickGraph" style="border:#000 3px solid; background-attachment: static; width:100%; align-content: center; height:18vw">
-      </div>
-    </section>
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top: 10px; padding-bottom: 10px;">
-        <img src="images/randomForestDiagram.svg" alt="randomForestDiagram" style="border:#000 3px solid; background-attachment: static; width:100%; height:18vw; align-content: center;">
-      </div>
-    </section>
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top: 10px; padding-bottom: 10px;">
-        <img src="images/earth.jpg" alt="earth" style="background-attachment: static; width:100%; height:18vw; align-content: center;">
-      </div>
-    </section>
-  
-  </section>
-
-  <section id = "researchContent" style = "width:100%; height:30%">
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top:1vw">
-        <div style="width:100%">
-          <div style="width:15%; float:left;">
-            <img src = "images/awardBlue.png" alt="medal" style = "background-attachment: static; float:left; width:3vw; height:4vw"> 
-          </div>
-          <div style="width:85%; float: left; text-align: left; padding-top:0.5vw">
-            <strong style="font-size: 1.5vw;">USCLAP Honorable Mention</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top:1vw">
-        <div style="width:100%">
-          <div style="width:15%; float:left;">
-          </div>
-          <div style="width:85%; float: left; text-align: left; padding-top:0.5vw">
-            <strong style="font-size: 1.5vw;"></strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section style = "width:33%; float:left">
-      <div style = "padding-left:50px; padding-right:30px; padding-top:1vw">
-        <div style="width:100%">
-          <div style="width:15%; float:left;">
-          </div>
-          <div style="width:85%; float: left; text-align: left; padding-top:0.5vw">
-            <strong style="font-size: 1.5vw;"></strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </section>
--->
-  </section>
-  
-  <!--
-  <section id = "PCA" style = "width:33%; height:60%; align-content: center; overflow: hidden; float:left">
-   <section style="height:60%;float:left;">
-
-    <div style = "padding-left:50px; padding-right:30px; padding-top: 10px;">
-
-    <p style="text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'">
-      <strong style = "font-size: 1.5vw;">The Effects of Improper Standardization on Modeling Trends in Surface Temperature</strong> 
-    </p>
-    <img src="images/hockeyStickGraph.png" alt="DataAnalysis" style="border:#000 3px solid; background-attachment: static; width:100%;">
-  
-    <div style="width:100%">
-      <div style="width:15%; float:left">
-        <img src = "images/awardBlue.png" alt="medal" style = "background-attachment: static; float:left; width:3vw; height:4vw"> 
-      </div>
-      <div style="width:85%; float: left; text-align: left; padding-top:1vw">
-        <strong style="font-size: 1.5vw;">USCLAP Honorable Mention</strong>
-      </div>
-    </div>
-    </div>
-    </section>
- </section>
-
- <section id = "machineLearning" style = "width:33%; height:60%; align-content: center; overflow: hidden; float:left">
-  <section style="height:60%;">
-
-   <div style = "padding-left:50px; padding-right:30px; padding-top: 10px;">
-   <p style="text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'">
-     <strong style = "font-size: 1.5vw;">Comparing, Validating, and Optimizing Machine Learning Models</strong> 
-   </p>
-   <img src="images/randomForestDiagram.svg" alt="randomForestDiagram" style="border:#000 3px solid; background-attachment: static; width:100%;">
- 
-   <div style="width:100%">
-     <div style="width:15%; float:left">
-       <img src = "images/awardBlue.png" alt="medal" style = "background-attachment: static; float:left; width:3vw; height:4vw"> 
-     </div>
-     <div style="width:85%; float: left; text-align: left; padding-top:1vw">
-       <strong style="font-size: 1.5vw;">USCLAP Honorable Mention</strong>
-     </div>
-   </div>
-   </div>
-
- </section>
-</section>
-
-<section id = "happinessStudy" style = "width:33%; height:60%; align-content: center; overflow: hidden; float:left">
-  <section style="height:60%;">
-
-   <div style = "padding-left:50px; padding-right:30px; padding-top: 10px;">
-
-   <p style="text-align: center; position:relative; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'">
-     <strong style = "font-size: 1.5vw;">Comparing, Validating, and Optimizing Machine Learning Models</strong> 
-   </p>
-   <img src="images/worldHappiness.jfif" alt="randomForestDiagram" style="border:#000 3px solid; background-attachment: static; width:100%;">
- 
-   <div style="width:100%">
-     <div style="width:15%; float:left">
-       <img src = "images/awardBlue.png" alt="medal" style = "background-attachment: static; float:left; width:3vw; height:4vw"> 
-     </div>
-     <div style="width:85%; float: left; text-align: left; padding-top:1vw">
-       <strong style="font-size: 1.5vw;">USCLAP Honorable Mention</strong>
-     </div>
-   </div>
-
- </div>
- </section>
-</section>
-
-</section>
-</section>
--->
 	
-<section id = "competitions" style="background-image: url('images/beigeBackground.svg'); background-size:cover; background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:125%;"> <br>
- 	<section style="height:30%; background-image: url('images/competitions.svg'); background-size:cover; background-attachment:fixed; background-position: center center; background-repeat: no-repeat;"> </section>
+<section id = "experiences" style="background-image: url('images/beigeBackground.svg'); background-size:cover; background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:200%;"> <br>
+   <section style="height:20vw; background-image: url('images/competitions.svg'); background-size:cover; background-attachment:fixed; background-position: center center; background-repeat: no-repeat;"> </section>
  
+    <section id="Pioneer Weekend">
+
+      <div style="width:40%; float:right">
+        <div style = "padding-right:100px; padding-top:100px">
+          <div style= "text-align:left; ">
+            <img src="images/pioneerWeekend.jpg" alt="pioneerWeekend" style=" background-attachment: static; width:80%; align-content: center; height:18vw">
+          </div>
+        </div>
+      </div>
+     
+      <div style="width:60%; float:right">
+        <div style = "padding-left:30%; padding-top: 100px;">
+          <div style= "text-align:left; ">
+            <p style="color:black;padding-right:30px; font-size:1.2vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
+              <strong style="font-size:1.75vw;">Pioneer Weekend</strong> <br>
+              <em>2019, 2020</em> 
+              <br>
+              <strong> Grinnell, IA </strong> 
+              <br>
+              <br>
+              Under the supervision of Dr. Shonda Kuiper, I produced content that teaches undergraduate level students machine learning classification (ML) algorithms, such as CART, random forest, and logistic regression; furthermore, utilizing HTML, PHP, and MySQL, I created webpages that interact with an SQL Database.
+              <br>
+              <br>
+              The ML content is centered around model creation, validation, and optimization. COMPAS, a classification algorithm used by many U.S. jurisdictions to predict the likelihood of a convicted individual recidivating, has a significantly high false positive rate for Black individuals. 
+              Our research informs students how to create different classification models to predict recidivism, compare between models using ROC curves, and assess differing accuracy metrics through cross validation. 
+              With these tools, students can reduce model bias and optimize classification algorithms for sensitivity or specificity. 
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="IBESCC">
+
+      <div style="width:40%; float:right">
+        <div style = "padding-right:100px; padding-top:100px">
+          <div style= "text-align:left; ">
+            <img src="images/LMUCaseCompetition.jpg" alt="IBESCC" style=" background-attachment: static; width:80%; align-content: center; height:18vw">
+          </div>
+        </div>
+      </div>
+     
+      <div style="width:60%; float:right">
+        <div style = "padding-left:30%; padding-top: 100px;">
+          <div style= "text-align:left; ">
+            <p style="color:black;padding-right:30px; font-size:1.2vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
+              <strong style="font-size:1.75vw;">International Business Ethics and Sustainability Case Competition</strong> <br>
+              <em>2019</em> 
+              <br>
+              <strong> Los Angeles, CA </strong> 
+              <br>
+              <br>
+              Under the supervision of Dr. Shonda Kuiper, I produced content that teaches undergraduate level students machine learning classification (ML) algorithms, such as CART, random forest, and logistic regression; furthermore, utilizing HTML, PHP, and MySQL, I created webpages that interact with an SQL Database.
+              <br>
+              <br>
+              The ML content is centered around model creation, validation, and optimization. COMPAS, a classification algorithm used by many U.S. jurisdictions to predict the likelihood of a convicted individual recidivating, has a significantly high false positive rate for Black individuals. 
+              Our research informs students how to create different classification models to predict recidivism, compare between models using ROC curves, and assess differing accuracy metrics through cross validation. 
+              With these tools, students can reduce model bias and optimize classification algorithms for sensitivity or specificity. 
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+   </section>
 </section>
 	
 	
 <section id = "finalSection" style="background-image: url('images/purpleFooter.jpg'); background-size:cover;background-attachment: fixed ;background-position: center center; background-repeat: no-repeat; height:5%"> </section>
-</body>
+  </body>
 </html>
