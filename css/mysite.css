@@ -336,10 +336,9 @@ li a {
 
 .conv-form-wrapper textarea{
   height:30px;
+  width:320px;
   overflow: hidden;
   resize:none;
-  display: none;
+  float:left;
 }
 
-#messages{
-}

@@ -275,7 +275,7 @@
       </form>
     </div>
   </div>
-
+  
 	<!--
     <section style="width:50%; float:left; overflow-y:hidden">
       <p style="text-align: center; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; padding-top:100px; padding-right:40px; padding-left:40px"> <strong style="font-size: 2.5vw; color: black;" > My passion is solving complex problems.</strong></p>
