@@ -299,7 +299,7 @@ div.conv-form-wrapper div.options div.option.selected:hover {
 form.convFormDynamic button.submit {
     padding: 3px;
     border: none;
-    float: left;
+    float: right;
     margin: 5px;
     color: #06c5a6;
     cursor: pointer;
