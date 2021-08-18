@@ -73,7 +73,7 @@
 
   <div class="chatBox">
     <div class="conv-form-wrapper">
-      <form action="" method="GET" class="hidden">
+      <form action="mailto:waynehenawi@gmail.com?subject=Test" method="GET" class="hidden" enctype="text/plain">
         <select name="introQuestion" data-conv-question="Hi, welcome to my website! How can I help you?">
           <option value="siteQuestion">What is this website?</option>
           <option value="skillsQuestion">What are your skills?</option>
@@ -85,16 +85,16 @@
           <div data-conv-case="siteQuestion">
             <select name="siteBranchQ2" data-conv-question="This website is a personal project of mine.
              I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." >            
-              <option value="skillsQuestion">What are your skills?</option>
-              <option value="personalQuestion">Tell me about yourself.</option>
+              <option value="skillsQuestion1">What are your skills?</option>
+              <option value="personalQuestion1">Tell me about yourself.</option>
             </select>
 
             <div data-conv-fork="siteBranchQ2">
 
-              <div data-conv-case="skillsQuestion">
+              <div data-conv-case="skillsQuestion1">
                 <select name="siteBranchQ3" data-conv-question="My primary focus is in the intersection between computer science, economics, and statistics. 
                 I have experience in R, SQL, Java, PHP, HTML, and CSS. I have also had business school experience, through Harvard Business School Online CORe, and consulting case experience.">            
-                  <option value="personalQuestion">Tell me about yourself.</option>
+                  <option value="personalQuestion1">Tell me about yourself.</option>
                 </select>
               </div>
             
@@ -102,13 +102,13 @@
                 <select name="siteBranchQ3" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                 My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
                 My hobbies and interests include personal finance, weightlifting, reading, and playing video games.">            
-                  <option value="skillsQuestion">What are your skills?</option>
+                  <option value="skillsQuestion1">What are your skills?</option>
                 </select>
               </div>
 
               <div data-conv-fork="siteBranchQ3">
 
-                <div data-conv-case="skillsQuestion">
+                <div data-conv-case="skillsQuestion1">
                   <input type="text" data-conv-question="My primary focus is in the 
                     intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
                     I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions" data-no-answer="true"> 
@@ -125,7 +125,7 @@
                   <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">
                 </div>
               
-                <div data-conv-case="personalQuestion">
+                <div data-conv-case="personalQuestion1">
                   <input type="text" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                   My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
                   My hobbies and interests include personal finance, weightlifting, reading, and playing video games." data-no-answer="true"> 
@@ -138,43 +138,43 @@
                     data-conv-question="Great. If its not too personal, what is your email?">
                   <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
                   <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
-                  <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">           
+                  <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way." value = "null">           
                   
+                  </div>
+
                 </div>
-
               </div>
-            </div>
 
-          </div>
+            </div>
       
           <div data-conv-case="skillsQuestion">
             <select name="siteBranchQ2" data-conv-question="My primary focus is in the 
             intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
             I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions" >            
-             <option value="siteQuestion">What is this website?</option>
-             <option value="personalQuestion">Tell me about yourself.</option>
+             <option value="siteQuestion2">What is this website?</option>
+             <option value="personalQuestion2">Tell me about yourself.</option>
            </select>
 
            <div data-conv-fork="siteBranchQ2">
 
-             <div data-conv-case="siteQuestion">
+             <div data-conv-case="siteQuestion2">
                <select name="siteBranchQ3" data-conv-question="This website is a personal project of mine.
                I really wanted to challenge myself by making my own website, and this is the outcome (so far!).">            
-                 <option value="personalQuestion">Tell me about yourself.</option>
+                 <option value="personalQuestion2">Tell me about yourself.</option>
                </select>
              </div>
            
-             <div data-conv-case="personalQuestion">
+             <div data-conv-case="personalQuestion2">
                <select name="siteBranchQ3" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
                My hobbies and interests include personal finance, weightlifting, reading, and playing video games.">            
-                 <option value="siteQuestion">What is this website?</option>
+                 <option value="siteQuestion2">What is this website?</option>
                </select>
              </div>
 
              <div data-conv-fork="siteBranchQ3">
 
-               <div data-conv-case="siteQuestion">
+               <div data-conv-case="siteQuestion2">
                  <input type="text" data-conv-question="This website is a personal project of mine.
                  I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." data-no-answer="true"> 
                    
@@ -190,7 +190,7 @@
                  <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">
                </div>
              
-               <div data-conv-case="personalQuestion">
+               <div data-conv-case="personalQuestion2">
                  <input type="text" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                  My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
                  My hobbies and interests include personal finance, weightlifting, reading, and playing video games." data-no-answer="true"> 
@@ -205,38 +205,39 @@
                  <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
                  <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">           
                  
-               </div>
+                </div>
 
-             </div>
-           </div>
+              </div>
+            </div>
+          </div>
            
-           <div data-conv-case="personalQuestion">
+          <div data-conv-case="personalQuestion">
               <select name="siteBranchQ2" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
               My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
               My hobbies and interests include personal finance, weightlifting, reading, and playing video games." >            
-               <option value="siteQuestion">What is this website?</option>
-               <option value="skillsQuestion">What are your skills?</option>
+               <option value="siteQuestion3">What is this website?</option>
+               <option value="skillsQuestion3">What are your skills?</option>
              </select>
   
              <div data-conv-fork="siteBranchQ2">
   
-               <div data-conv-case="siteQuestion">
+               <div data-conv-case="siteQuestion3">
                  <select name="siteBranchQ3" data-conv-question="This website is a personal project of mine.
                  I really wanted to challenge myself by making my own website, and this is the outcome (so far!).">            
-                   <option value="personalQuestion">What are your skills?</option>
+                   <option value="skillsQuestion3">What are your skills?</option>
                  </select>
                </div>
              
-               <div data-conv-case="skillsQuestion">
+               <div data-conv-case="skillsQuestion3">
                  <select name="siteBranchQ3" data-conv-question="My primary focus is in the 
                  intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
                  I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions">            
-                   <option value="siteQuestion">What is this website?</option>
+                   <option value="siteQuestion3">What is this website?</option>
                  </select>
                </div>
   
                <div data-conv-fork="siteBranchQ3">
-                  <div data-conv-case="siteQuestion">
+                  <div data-conv-case="siteQuestion3">
                     <input type="text" data-conv-question="This website is a personal project of mine.
                     I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." data-no-answer="true"> 
                       
@@ -252,7 +253,7 @@
                     <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">
                   </div>
                
-                  <div data-conv-case="skillsQuestion">
+                  <div data-conv-case="skillsQuestion3">
                     <input type="text" data-conv-question="My primary focus is in the 
                     intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
                     I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions" data-no-answer="true"> 
@@ -271,7 +272,6 @@
                 </div>
            </div>
         </div>
-
       </form>
     </div>
   </div>
