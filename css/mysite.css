@@ -67,7 +67,7 @@ a:hover {
 
 a.norm {
 	text-decoration:none;
-	color:white;
+	color:black;
 }
 
 a.blackNorm {
@@ -113,6 +113,7 @@ p {
 .fa-github {
   background: #000000;
   color: white;
+  border: black solid 1px;
 }
 
 .fa-linkedin {
@@ -139,10 +140,37 @@ header::after{
   clear:both;
 }
 
+footer{
+  background:#fff;
+  border-bottom: lightgrey solid 0.5px;
+  border-left: lightgrey solid 0.5px;
+  border-right:  lightgrey solid 0.5px;
+  border-top:black solid 2px;
+  margin:auto;
+}
+
+footer::after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
 .logo{
   float:left;
   padding:15px 0;
 }
+
+.quote{
+  width:50%;
+  float:left;
+  padding:50px;
+  color:#000;
+  text-decoration: none;
+  font-size: 24px; 
+  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+  line-height: 1.75;
+}
+
 
 
 nav{  
@@ -222,8 +250,8 @@ li a {
 .popup .popuptext {
   visibility: hidden;
   width: 200px;
-  background-color: #555;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   text-align: center;
   border-radius: 6px;
   padding: 8px 0;
@@ -238,10 +266,10 @@ li a {
 
 .popup .popuptext a {
   text-decoration: none;
-  color:white;
+  color:black;
 }
 .popup .popuptext a:hover {
-  color:black;
+  color:slategrey;
 }
 
 /* Popup arrow */
@@ -272,4 +300,45 @@ li a {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+/*Chat Bot Code*/
+.chatIcon {
+  position:fixed;
+  right:100px;
+  bottom:0;
+  font-size:5vw;
+  color:#000;
+  cursor:pointer;
+  z-index: 1000;
+}
+
+.chatBox {
+  position:fixed;
+  right:100px;
+  bottom:100px;
+  width:450px;
+  height:80vh;
+  background:#dedede;
+  z-index:1000;
+  transition: all 1s ease-out;
+  transform: scaleY(0);
+  padding:5px 10px;
+}
+
+.chatBox.active{
+  transform:scaleY(1);
+}
+
+.hidden{
+  display:none !important;
+}
+
+.conv-form-wrapper textarea{
+  height:30px;
+  overflow: hidden;
+  resize:none;
+}
+
+#messages{
 }
