@@ -73,14 +73,14 @@
 
   <div class="chatBox">
     <div class="conv-form-wrapper">
-      <form  method="POST" class="hidden" data-netlify="true">
-        <select name="introQuestion" data-conv-question="Hi, welcome to my website! How can I help you?">
+      <form name="chatResponses" method="POST" class="hidden" data-netlify="true">
+        <select name="siteBranchQ1" data-conv-question="Hi, welcome to my website! How can I help you?">
           <option value="siteQuestion">What is this website?</option>
           <option value="skillsQuestion">What are your skills?</option>
           <option value="personalQuestion">Tell me about yourself.</option>
         </select>
 
-        <div data-conv-fork="introQuestion">
+        <div data-conv-fork="siteBranchQ1">
 
           <div data-conv-case="siteQuestion">
             <select name="siteBranchQ2" data-conv-question="This website is a personal project of mine.
@@ -134,10 +134,10 @@
                   <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
                   <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
                     Is there anything you think could be improved on this site?">
-                  <input type="email" name="email"data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                    data-conv-question="Great. If its not too personal, what is your email?">
-                  <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
-                  <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
+                    <input type="text" name="comments" data-conv-question="Thanks for your feedback. Is there anything else you would like me to know?">
+                  <input type="text" name="email" data-conv-question="Great. If its not too personal, what is your email?">
+                  <input type="text" name="contact" data-conv-question="May I contact you?">
+                  <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me at waynehenawi@gmail.com if you have any questions or comments!">
                   <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way." value = "null">           
                   
                   </div>
