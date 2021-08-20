@@ -268,7 +268,7 @@ ConvState.prototype.answerWith = function(answerText, answerObject) {
             eventList : {
                 onSubmitForm : function(convState) {
                     console.log('completed');
-                    convState.form.preventDefault();
+                    //convState.form.preventDefault();
                     convState.form.submit();
                     return true;
                 },
