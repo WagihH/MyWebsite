@@ -88,24 +88,6 @@ form.convFormDynamic {
     box-shadow: 0 0 5px 5px rgba(222, 222, 222, 0.4);
 }
 
-/*
-form.convFormDynamic textarea.userInputDynamic {
-    border: none;
-    padding: 7px 10px;
-    outline: none;
-    font-size: 0.905rem;
-    float: left;
-    width: calc(100% - 70px);
-    line-height: 1.3em;
-    min-height: 1.7em;
-    max-height: 10rem;
-    display: block;
-    max-width: 88%;
-    margin-right: 2.5%;
-}
-*/
-
-
 form.convFormDynamic input.userInputDynamic {
     border: none;
     padding: 7px 10px;

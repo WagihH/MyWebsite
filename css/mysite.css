@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 body, html {
-	 min-width:1000px;  
-	min-height: 600px;
-   width: auto !important;  
-   width:1000px; 
+	min-width:640px;  
+	min-height: 480px;
+  width: auto !important;  
+  width:700px; 
 	height:100%;
   margin: auto;
   overflow-x: hidden;
@@ -14,6 +14,7 @@ body, html {
 div#about{min-width:800px;}
 div#about > div{float:left; width:50%}
 div#about > div > div{padding:40px}
+
 
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 0.11; /* IE9 only */ } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; opacity: 0.11; /* IE9 only */ } to { opacity:1; } }
@@ -73,9 +74,8 @@ a.norm {
 a.blackNorm {
 	text-decoration:none;
 	color:black;
-  font-size:1vw;
-  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
-}
+  font-size:1.5vw;
+  font-family: 'Lobster Two', cursive;}
 
 a.blackNorm:hover{
 	color: darkgray;
@@ -122,8 +122,8 @@ p {
   border: black solid 1px;
 }
 
+
 .container{
-  width:100%;
   margin: 0px auto; 
   padding-left:25px;
 }
@@ -145,7 +145,7 @@ footer{
   border-bottom: lightgrey solid 0.5px;
   border-left: lightgrey solid 0.5px;
   border-right:  lightgrey solid 0.5px;
-  border-top:black solid 2px;
+  border-top:black solid 1px;
   margin:auto;
 }
 
@@ -161,20 +161,30 @@ footer::after{
 }
 
 .quote{
-  width:50%;
+  width:60%;
   float:left;
   padding:50px;
   color:#000;
   text-decoration: none;
-  font-size: 24px; 
-  font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+  font-size: 18px; 
   line-height: 1.75;
 }
 
+.mono{
+  font-family: 'Lobster Two', cursive;
+  line-height: 1.75;
+  font-size: 1.75vw; 
+}
 
 
 nav{  
   float:center;
+}
+
+nav:after{
+  content:'';
+  clear:both;
+  display:table;
 }
 
 nav ul {
@@ -183,12 +193,11 @@ nav ul {
   list-style:none;
 }
 
-nav li {
+nav ul li {
   display:inline-block;
   margin-left:10vw;
   padding-top:20px;
   position:relative;
-
 }
 
 nav a {
@@ -226,6 +235,7 @@ li a {
   text-decoration: solid; 
 
 }
+
 
 
 .popup {
@@ -340,5 +350,6 @@ li a {
   overflow: hidden;
   resize:none;
   float:left;
+  display:none;
 }
 

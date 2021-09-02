@@ -5,11 +5,15 @@
     <link rel="stylesheet" href="css/mysite.css">
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href = "css/jquery.convform.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Tulpen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>index</title>
   </head>
+
   <body>
 
     <section id = "openingSection" style="background-image: url('images/openingBackground.svg'); background-size:cover;background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:100%">
@@ -21,7 +25,7 @@
               <ul>
                 <li><a href="#"><b>Home</b></a></li>
                 <li><a href="resume.htm"><b>Resume</b></a></li>
-                <li><a href="#"><b>More</b></a></li>
+                <li><a href="files/Henawi_Wagih_Transcript.pdf"><b>Transcript</b></a> </li>
               </ul>
             </nav>
         </div>
@@ -30,7 +34,7 @@
 
       <div class="fade-in one" style="width:100%; height:90%">
           <div style="padding-top:200px; position:relative">
-            <p style="padding-left:50px;margin:auto; font-size:6vw; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height:1"> Wagih <br>
+            <p style="padding-left:50px;margin:auto; font-size:6vw; font-family: 'Lobster Two', cursive; line-height:1"> Wagih <br>
               Henawi 
             </p>
           </div>
@@ -45,7 +49,7 @@
 
           </div>
                 
-          <div class="popup" style="float:left" onclick="popupFunction()"><strong>Contact Me</strong>
+          <div class="popup" style="float:left" onclick="popupFunction()"><strong style="font-family: Tulpen, cursive;">Contact Me</strong>
             <span class="popuptext" id="myPopup"><a href = "mailto: waynehenawi@gmail.com">waynehenawi@gmail.com</a> <br> (917) 463-7466</span>
           </div>
         </div>
@@ -58,36 +62,42 @@
 	<section style="height:20vw; background-image: url('images/about.svg'); background-size:cover; background-attachment:fixed; background-position: center center; background-repeat: no-repeat;"> </section>
 	
   <section style="width:50%;float:left">
-     <img src="images/data_analysis.png" alt="DataAnalysis" style="height:30vw; background-attachment: static; width:30vw; float:right; padding-top:100px; padding-left:100px; padding-right:100px; padding-bottom: 100px">
+     <img src="images/data_analysis.png" alt="DataAnalysis" style="height:25vw; background-attachment: static; width:25vw; float:right; padding-top:100px; padding-left:100px; padding-right:100px; padding-bottom: 100px">
+  </section>
+
+  <section style="width:50%; float:left;">
+    <div style="margin:10%; padding-top:10vw">
+      <p style="color:black;font-size:1.75vw; margin:auto; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 1.5;">
+        Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs.
+        Navigating the business world is tough, which is why I believe data-driven decision making is essential.
+        My goals lie in applying machine learning, statistics, and logic to add real value to a firm.
+      </p>
+    </div>
   </section>
 
   <!-- ChatBot-->
   <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
   <script type="text/javascript" src="js/custom.js"></script> 
   <script type="text/javascript" src="js/jquery.convform.js"></script> 
-
-
   <div class = "chatIcon">
     <i class="fa fa-comments"></i>
   </div>
-
-
-      <form name="chatResponses" method="POST" type="hidden" data-netlify="true" enctype="application/x-www-form-urlencoded">
-        <div class="chatBox">
-          <div class="conv-form-wrapper">
-          <select name="siteBranchQ1" data-conv-question="Hi, welcome to my website! How can I help you?">
-            <option value="siteQuestion">What is this website?</option>
-            <option value="skillsQuestion">What are your skills?</option>
-            <option value="personalQuestion">Tell me about yourself.</option>
+  <div class="chatBox">
+    <div class="conv-form-wrapper">
+      <form name="chatResponses" method="POST">
+        <select name="siteBranchQ1" data-conv-question="Hi, welcome to my website! How can I help you?">
+          <option value="personalQuestion">Tell me about yourself.</option>
+          <option value="skillsQuestion">What are your skills?</option>
+           <option value="siteQuestion">What is this website?</option>
           </select>
 
           <div data-conv-fork="siteBranchQ1">
 
             <div data-conv-case="siteQuestion">
               <select name="siteBranchQ2" data-conv-question="This website is a personal project of mine.
-              I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." >            
+              I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." >
+              <option value="personalQuestion1">Tell me about yourself.</option>            
                 <option value="skillsQuestion1">What are your skills?</option>
-                <option value="personalQuestion1">Tell me about yourself.</option>
               </select>
 
               <div data-conv-fork="siteBranchQ2">
@@ -102,7 +112,7 @@
                 <div data-conv-case="personalQuestion">
                   <select name="siteBranchQ3" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                   My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
-                  My hobbies and interests include personal finance, weightlifting, reading, and playing video games.">            
+                  My hobbies and interests include personal finance, weightlifting, traveling, debate, and trying new things.">            
                     <option value="skillsQuestion1">What are your skills?</option>
                   </select>
                 </div>
@@ -114,33 +124,14 @@
                       intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
                       I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions" data-no-answer="true"> 
                       
-                      <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. I would love to learn more about you, as well! What is your name?">            
-                    
-                    <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
-                    <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
-                      Is there anything you think could be improved on this site?">
-                    <input type="email" name="email"data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                      data-conv-question="Great. If its not too personal, what is your email?">
-                    <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
-                    <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
-                    <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">
-                  </div>
+                      <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. If you have any questions or comments, you can email me at waynehenawi@gmail.com. You can hide this chat box by pressing the chat icon on the bottom right, by the way.">            
+                    </div>
                 
                   <div data-conv-case="personalQuestion1">
                     <input type="text" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                     My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
-                    My hobbies and interests include personal finance, weightlifting, reading, and playing video games." data-no-answer="true"> 
-                      <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. I would love to learn more about you, as well! What is your name?">            
-                    
-                    <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
-                    <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
-                      Is there anything you think could be improved on this site?">
-                      <input type="text" name="comments" data-conv-question="Thanks for your feedback. Is there anything else you would like me to know?">
-                    <input type="text" name="email" data-conv-question="Great. If its not too personal, what is your email?">
-                    <input type="text" name="contact" data-conv-question="May I contact you?">
-                    <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me at waynehenawi@gmail.com if you have any questions or comments!">
-                    <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way." value = "null">           
-                    
+                    My hobbies and interests include ppersonal finance, weightlifting, traveling, debate, and trying new things." data-no-answer="true"> 
+                    <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. If you have any questions or comments, you can email me at waynehenawi@gmail.com. You can hide this chat box by pressing the chat icon on the bottom right, by the way.">                                
                     </div>
 
                   </div>
@@ -152,8 +143,8 @@
               <select name="siteBranchQ2" data-conv-question="My primary focus is in the 
               intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
               I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions" >            
-              <option value="siteQuestion2">What is this website?</option>
               <option value="personalQuestion2">Tell me about yourself.</option>
+              <option value="siteQuestion2">What is this website?</option>
             </select>
 
             <div data-conv-fork="siteBranchQ2">
@@ -168,7 +159,7 @@
               <div data-conv-case="personalQuestion2">
                 <select name="siteBranchQ3" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                 My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
-                My hobbies and interests include personal finance, weightlifting, reading, and playing video games.">            
+                My hobbies and interests include personal finance, weightlifting, traveling, debate, and trying new things.">            
                   <option value="siteQuestion2">What is this website?</option>
                 </select>
               </div>
@@ -179,33 +170,14 @@
                   <input type="text" data-conv-question="This website is a personal project of mine.
                   I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." data-no-answer="true"> 
                     
-                    <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. I would love to learn more about you, as well! What is your name?">            
-                  
-                  <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
-                  <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
-                    Is there anything you think could be improved on this site?">
-                  <input type="email" name="email"data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                    data-conv-question="Great. If its not too personal, what is your email?">
-                  <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
-                  <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
-                  <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">
+                  <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. If you have any questions or comments, you can email me at waynehenawi@gmail.com. You can hide this chat box by pressing the chat icon on the bottom right, by the way.">            
                 </div>
               
                 <div data-conv-case="personalQuestion2">
                   <input type="text" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                   My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
-                  My hobbies and interests include personal finance, weightlifting, reading, and playing video games." data-no-answer="true"> 
-                    <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. I would love to learn more about you, as well! What is your name?">            
-                  
-                  <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
-                  <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
-                    Is there anything you think could be improved on this site?">
-                  <input type="email" name="email"data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                    data-conv-question="Great. If its not too personal, what is your email?">
-                  <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
-                  <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
-                  <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">           
-                  
+                  My hobbies and interests include personal finance, weightlifting, traveling, debate, and trying new things." data-no-answer="true"> 
+                  <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. If you have any questions or comments, you can email me at waynehenawi@gmail.com. You can hide this chat box by pressing the chat icon on the bottom right, by the way.">                              
                   </div>
 
                 </div>
@@ -215,9 +187,9 @@
             <div data-conv-case="personalQuestion">
                 <select name="siteBranchQ2" data-conv-question="Hi, I'm Wagih, a senior at Grinnell College interested in using data to solve various business needs. 
                 My goals lie in applying machine learning, statistics, and logic to add real value to a firm. 
-                My hobbies and interests include personal finance, weightlifting, reading, and playing video games." >            
+                My hobbies and interests include personal finance, weightlifting, traveling, debate, and trying new things."> 
+                <option value="skillsQuestion3">What are your skills?</option>           
                 <option value="siteQuestion3">What is this website?</option>
-                <option value="skillsQuestion3">What are your skills?</option>
               </select>
     
               <div data-conv-fork="siteBranchQ2">
@@ -242,48 +214,22 @@
                       <input type="text" data-conv-question="This website is a personal project of mine.
                       I really wanted to challenge myself by making my own website, and this is the outcome (so far!)." data-no-answer="true"> 
                         
-                        <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. I would love to learn more about you, as well! What is your name?">            
-                      
-                      <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
-                      <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
-                        Is there anything you think could be improved on this site?">
-                      <input type="email" name="email"data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                        data-conv-question="Great. If its not too personal, what is your email?">
-                      <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
-                      <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
-                      <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">
+                      <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. If you have any questions or comments, you can email me at waynehenawi@gmail.com. You can hide this chat box by pressing the chat icon on the bottom right, by the way.">            
                     </div>
                 
                     <div data-conv-case="skillsQuestion3">
                       <input type="text" data-conv-question="My primary focus is in the 
                       intersection between computer science, economics, and statistics. I have experience in R, SQL, Java, PHP, HTML, and CSS. 
                       I have also had business school experience, through Harvard Business School Online CORe, consulting case experience, and experiences from a couple of business competitions" data-no-answer="true"> 
-                        <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. I would love to learn more about you, as well! What is your name?">            
-                      
-                      <input type="text" name="siteAccess" data-conv-question="Thanks, {name}:0! Nice to meet you. How did you come across my website?">
-                      <input type="text" name="improvements" data-conv-question="Noted. I hope you enjoy what you see, as I put a lot of work into it. I would appreciate any feedback or criticisms though! 
-                        Is there anything you think could be improved on this site?">
-                      <input type="email" name="email"data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
-                        data-conv-question="Great. If its not too personal, what is your email?">
-                      <input type="text" name="contact" data-conv-question="Would you like me to contact you?">
-                      <input data-no-answer="true" data-conv-question="Okay, sounds good. Once again, thank you for coming to my site. Please take your time looking around and contact me if you have any questions or comments!">
-                      <input data-no-answer="true" data-conv-question="You can hide this chat box by pressing the chat icon on the bottom right, by the way.">           
-                    
+                      <input type = "text" name = "name" data-conv-question="In any case, thank you so much for learning more about me. If you have any questions or comments, you can email me at waynehenawi@gmail.com. You can hide this chat box by pressing the chat icon on the bottom right, by the way.">                     
                     </div>
                   </div>
             </div>
           </div>
-        </div>
-      </div>
     </form>
+  </div>
+</div>
 
-	<!--
-    <section style="width:50%; float:left; overflow-y:hidden">
-      <p style="text-align: center; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; padding-top:100px; padding-right:40px; padding-left:40px"> <strong style="font-size: 2.5vw; color: black;" > My passion is solving complex problems.</strong></p>
-      <p style="text-align:center; font-size:1.75vw; line-height:1.65; color: black;padding-right:40px; padding-left:40px; padding-bottom:50px "> Hi, I'm Wagih -- a senior at Grinnell College interested in using data to solve various business needs. Navigating the business world is tough, which is why I believe in data-driven decision making. My primary focus is in applying machine learning, statistics, and logic to add real value to a firm.  </p>
-    </section>
-  -->
-  
 	</section>
 
     <section id = "research" style="background-image: url('images/beigeBackground.svg'); background-size:cover; background-attachment: relative; background-position: center center; background-repeat: no-repeat; height:125vw;"> 
@@ -491,14 +437,31 @@
     </section>
 
 
-    <section id = "footer" style="background-size:cover;background-attachment: fixed ;background-position: center center; background-repeat: no-repeat; height:5%">
+    <section id = "footer" style="background-size:cover;background-attachment: fixed ;background-position: center center; background-repeat: no-repeat; width:100%;">
       <footer>
-        <div class = "containter">
           <div class = "quote">
-            “Whether you think you can, or you think you can't -- you're right.” <br>
-            <em text-align="right">-Henry Ford</em>
+            <p style="text-align:right">
+            <strong class = "mono">“Whether you think you can, or you think you can't -- you're right.” <br>
+            <em>-Henry Ford</em></strong>
+            </p>
           </div>
+
+        <div>
+          <div style="text-align: center; padding-top:3%; font-family: 'Lobster Two', cursive;  font-size:1.5vw;          ">
+            <a href="https://www.linkedin.com/in/wagih-henawi-28610217b/" style = "font-size:30px;" class="fa fa-linkedin"></a>
+            <a href="https://github.com/WagihH" style = "font-size:30px;" class="fa fa-github"></a> <br>
+            <a class="blackNorm" href= "mailto: waynehenawi@gmail.com">waynehenawi@gmail.com</a> <br> (917) 463-7466
         </div>
+        <p>
+
+        </p>
+        </div>
+        <div style="width:100%;float:left;">
+          <p style="text-align: center;">
+            <strong>© 2021 Wagih Henawi. All rights reserved. </strong>
+          </p>
+        </div>
+
       </footer>
     </section>
 
